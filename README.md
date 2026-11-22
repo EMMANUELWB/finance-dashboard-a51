@@ -96,16 +96,6 @@ Screenshots of every screen and every test are in the folder Screenshots & Pictu
 
 ## 10. GitHub
 
-1. Create an empty repository on GitHub, for example finance-dashboard-a51.
-2. In the project folder, run:
-   - git init
-   - git add .
-   - git commit -m "Finance dashboard"
-   - git branch -M main
-   - git remote add origin PASTE-REPOSITORY-LINK-HERE
-   - git push -u origin main
-3. Paste the link here.
-
 GitHub link: [https://github.com/EMMANUELWB/finance-dashboard-a51](https://github.com/EMMANUELWB/finance-dashboard-a51)
 
 ## 11. Hosting (optional)
