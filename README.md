@@ -98,10 +98,7 @@ Screenshots of every screen and every test are in the folder Screenshots & Pictu
 
 GitHub link: [https://github.com/EMMANUELWB/finance-dashboard-a51](https://github.com/EMMANUELWB/finance-dashboard-a51)
 
-## 11. Hosting (optional)
 
-Vercel is built for JavaScript sites and handles Django poorly, and it cannot keep a SQLite file between visits. If you want a live link, use a Python host with a Neon or Supabase Postgres database. For the submission, a GitHub link plus the screenshots shows the working system.
-
-## 12. Group
+## 11. Group
 
 Group A51: Emmanuel Idoko Agbo (Group Leader), Agunloye Marvellous Abimbola, Orumgbe Samuel Ifeanyichukwu, Adeleke Faruq Adeniji, Agbebi Oluwatobi Temitayo. Implementation by Emmanuel Idoko Agbo (Tasks 8 and 9).
