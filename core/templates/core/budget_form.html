@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}
+{% block title %}Budgets{% endblock %}
+
+{% block content %}
+<h2>Set category budget</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save budget</button>
+</form>
+
+<h2>Existing budgets</h2>
+<table>
+    <tr><th>Month</th><th>Category</th><th>Amount allocated (Naira)</th></tr>
+    {% for budget in budgets %}
+    <tr>
+        <td>{{ budget.month }}</td>
+        <td>{{ budget.category.name }}</td>
+        <td>{{ budget.amount_allocated|floatformat:2 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

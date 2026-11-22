@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}
+{% block title %}Pending Approvals{% endblock %}
+
+{% block content %}
+<h2>Pending approvals</h2>
+
+<table>
+    <tr><th>Date</th><th>Category</th><th>Amount (Naira)</th><th>Description</th><th>Action</th></tr>
+    {% for approval in pending %}
+    <tr>
+        <td>{{ approval.transaction.date }}</td>
+        <td>{{ approval.transaction.category.name }}</td>
+        <td>{{ approval.transaction.amount|floatformat:2 }}</td>
+        <td>{{ approval.transaction.description }}</td>
+        <td><a href="{% url 'decide_approval' approval.id %}">Decide</a></td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="5">No pending approvals.</td></tr>
+    {% endfor %}
+</table>
+{% endblock %}

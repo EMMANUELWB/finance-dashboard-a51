@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Finance Dashboard</h2>
+
+<div class="card">
+    <p>Total income: ₦{{ income_total|floatformat:2 }}</p>
+    <p>Total expenses: ₦{{ expense_total|floatformat:2 }}</p>
+    <p><strong>Balance: ₦{{ balance|floatformat:2 }}</strong></p>
+</div>
+
+<h2>Budget used by category</h2>
+{% for row in category_rows %}
+    <div class="card">
+        <p>{{ row.name }}: ₦{{ row.spent|floatformat:2 }} of ₦{{ row.allocated|floatformat:2 }} ({{ row.percent }}%)</p>
+    </div>
+{% empty %}
+    <p>No expense categories yet.</p>
+{% endfor %}
+{% endblock %}
