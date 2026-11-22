@@ -106,7 +106,7 @@ Screenshots of every screen and every test are in the folder Screenshots & Pictu
    - git push -u origin main
 3. Paste the link here.
 
-GitHub link: https://github.com/EMMANUELWB/finance-dashboard-a51.git
+GitHub link: [https://github.com/EMMANUELWB/finance-dashboard-a51](https://github.com/EMMANUELWB/finance-dashboard-a51)
 
 ## 11. Hosting (optional)
 
